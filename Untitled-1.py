@@ -17,4 +17,4 @@ TEST = bot_call("Manchester United is a bigger club than Manchester City")
 # focus on subreddits such as ShowerThoughts, Soccer etc.
 
 # experiment will be of two parts, one focusing on short comments (such as r/showerthoughts) and others focusing on long paragraphs (such as r/subredditdrama). 
-# i hypothesize that it'll do better 
+# i hypothesize that the longer statement replys will be better because the bot will have more context
