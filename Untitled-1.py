@@ -10,8 +10,11 @@ class bot_call():
         print(response)
 
 
-TEST = bot_call("Manchester United is a bigger club than Manchester City")
+# make reddit api search for comments in specific subreddits
+# MAKE SURE TO REMOVE REDDIT ACCESS KEYS WHEN INCORPARATING IT
 
+
+TEST = bot_call("Manchester United is a bigger club than Manchester City")
 
 # set limit of witty comments to two per reddit thread
 # focus on subreddits such as ShowerThoughts, Soccer etc.
