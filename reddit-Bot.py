@@ -1,4 +1,6 @@
 from praw import reddit as praw 
+import re
+
 
 reddit = praw.Reddit(
     client_id="",
