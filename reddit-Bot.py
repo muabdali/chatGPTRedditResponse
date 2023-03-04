@@ -1,7 +1,7 @@
 from praw import reddit as praw 
 
 
-with open('test.txt', 'r') as file:
+with open('redditTokens.txt', 'r') as file:
     # Read the contents of the file
     contents = file.readlines()
 
@@ -20,6 +20,7 @@ for line in contents:
         parts = line.split('=')
         # Get the second part (the value) and remove any whitespace
         client_code = parts[1].strip()
+        print(client_code)
 
 # Print the results
 print(client_id)
