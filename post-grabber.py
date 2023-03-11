@@ -2,8 +2,6 @@
 from redditTokenInit import *
 import praw
 
-print(client_secret)
-
 reddit = praw.Reddit(
     client_id = client_id,
     client_secret  = client_secret,
@@ -16,7 +14,6 @@ with open('subredditlist.txt', 'r') as file:
     contents = file.readlines()
 
 
-for line in contents:
-    print(f'r/{line}')
-
-subreddit = reddit.subreddit("")
+for subredditName in contents:
+    print(f'r/{subredditName}')
+    
