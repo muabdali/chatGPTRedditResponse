@@ -12,6 +12,11 @@ reddit = praw.Reddit(
     username = account_name
 )
 
+with open('subredditlist.txt', 'r') as file:
+    contents = file.readlines()
 
+
+for line in contents:
+    print(f'r/{line}')
 
 subreddit = reddit.subreddit("")
