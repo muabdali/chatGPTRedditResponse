@@ -10,10 +10,17 @@ reddit = praw.Reddit(
     username = account_name
 )
 
-with open('subredditlist.txt', 'r') as file:
-    contents = file.readlines()
 
-
-for subredditName in contents:
-    print(f'r/{subredditName}')
     
+class postGrabber:
+    def __init__(self, subredditlist) -> None:
+        def subredditlistInit(subredditlist):
+            with open(subredditlist, 'r') as file:
+                contents = file.readlines()
+            for subredditName in contents:
+                print(f'r/{subredditName}')
+        pass
+
+
+
+run = postGrabber('subredditlist.txt')
